@@ -1,0 +1,30 @@
+
+{% extends "base2.html" %}
+{% load static humanize %}
+
+{% block main %}
+<div id="wrapper" class="main">
+    <div class="service_page">
+        <div class="content">
+            <h1 class="load-fade">BUSINESS<span>情報誌の作成</span></h1>
+            <div class="area_box">
+                <div class="autoplay">
+                    <img src="{% static 'business/magazine/image01.jpg' %}">
+                    <img src="{% static 'business/magazine/image02.jpg' %}">
+                    <img src="{% static 'business/magazine/image03.jpg' %}">
+                </div>
+                <div class="inner">
+                    <h2>東武鉄道</h2>
+                    <p>開発環境：HTML,CSS,JavaScript,Json,PHP,Ruby</p>
+                    <p>作業内容：作業内容：ページの構成、デザイン、コーディング、バナー作成</p>
+                    <p>担当の情報誌：マンスリーとーぶ、MeMOt(ミモット)、沿線情報ゆぁ東上、その他</p>
+                    <p>詳細内容：毎月発行となる情報誌のページ作成を担当させていただきました。</p>
+                    <p class="icon">URL：<a href="https://www.tobu.co.jp/odekake/magazine/" target="_blank">https://www.tobu.co.jp/odekake/magazine/</a></p>
+                    <p>{{info}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

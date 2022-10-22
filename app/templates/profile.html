@@ -1,0 +1,44 @@
+{% extends "base2.html" %}
+{% load static humanize %}
+
+{% block main %}
+
+
+<div id="wrapper" class="main">
+    <div class="content_profile" id="profile">
+        <h1 class="load-fade">PROFILE<span>プロフィール</span></h1>
+        <div class="profile_area">
+            <div class="profile_inner">
+                <div class="profile_box">
+                    <div class="profile_image load-fade">
+                        <img src="{% static 'common/img/profile.png' %}" />
+                    </div>
+                    <div class="profile_text load-fade">
+                        <dl>
+                            <dt>NAME</dt>
+                            <dd>
+                                坪倉修平 Tsubokura Shuhei<br>
+                                Web デザイナー<br>
+                                鳥取県生まれ、東京在住
+                            </dd>
+                            <!-- <dt>CONTACT</dt>
+                            <dd>repeat2639@gmail.com</dd> -->
+                            <dt>ADDRESS</dt>
+                            <dd>
+                                東京都東村山市<br>
+                                Tokyo Higashimurayama
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="profile_history load-fade">
+                    <p>2018年10月よりInternetAcademyスクールに通学</p>
+                    <p>2019年7月にInternetAcademyスクールを卒業</p>
+                    <p>2019年8月にNHK(日本放送協会)にてWeb制作の現場にてLINEニュースのデザイン担当を行う</p>
+                    <p>2019年11月から東武ビジネスソリューションにて東武鉄道、東武グループのWeb運用、Web制作に携わる</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

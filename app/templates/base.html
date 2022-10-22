@@ -1,0 +1,29 @@
+{% load static %}
+<!doctype HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'common/css/HTML5 Doctor Reset CSS.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kosugi&family=Sarabun:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" media="(min-width: 781px)" href="{% static 'common/css/main.css' %}">
+<link rel="stylesheet" media="(max-width: 780px)" href="{% static 'common/css/main_sp.css' %}">
+    </head>
+    <body>
+
+        {% include "_navbar.html" %}
+        <div>
+            {% block main %}
+            {% endblock %}
+        </div>
+        {% include "_footer.html" %}
+        
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="{% static 'common/js/main.js' %}"></script>
+    <script src="{% static 'common/js/style.js' %}"></script>
+    
+</html>

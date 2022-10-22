@@ -1,0 +1,29 @@
+
+{% extends "base2.html" %}
+{% load static humanize %}
+
+{% block main %}
+<div id="wrapper" class="main">
+    <div class="content_work work_page">
+        <div class="content">
+            <h1 class="load-fade">WORK<span>実績</span></h1>
+            <div class="area_box">
+                <div class="autoplay">
+                    <img src="{% static image01 %}">
+                    <img src="{% static image02 %}">
+                    <img src="{% static image03 %}">
+                    <img src="{% static image04 %}">
+                </div>
+                <div class="inner">
+                    <h2>{{name}}</h2>
+                    <p>SCOPE：{{msg}}</p>
+                    <p>{{info}}</p>
+                    <p class="icon">URL：<a href="{{link}}" target="_blank">{{link}}</a></p>
+                </div>
+            </div>
+            <div class="area_box sp_image"><img src="{% static image_sp %}"></div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

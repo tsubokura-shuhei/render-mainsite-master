@@ -1,0 +1,162 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block main %}
+
+<div id="wrapper" class="main">
+    <section class="content_work">
+        <h2 class="main_scroll_up">WORK<span>実績</span></h2>
+        <div class="work_inner main-fade main_scroll_up">
+            <div class="inner_box">
+                <a href="{% url 'work_page4' %}">
+                    <img src="{% static 'work/page04/image01.png' %}" />
+                    <p>ポイント倍増キャンペーン</p>
+                </a>
+            </div>
+            <div class="inner_box">
+                <a href="{% url 'work_page7' %}">
+                    <img src="{% static 'work/page07/image01.png' %}" />
+                    <p>東武アーバンパークライン</p>
+                </a>
+            </div>
+            <div class="inner_box">
+                <a href="{% url 'work_page3' %}">
+                    <img src="{% static 'work/page03/image01.png' %}" />
+                    <p>日光・鬼怒川週末フリーデー</p>
+                </a>
+            </div>
+            <div class="inner_box">
+                <a href="{% url 'work_page1' %}">
+                    <img src="{% static 'work/page01/image01.png' %}" />
+                    <p>安芸大学</p>
+                </a>
+            </div>
+            <div class="inner_box">
+                <a href="{% url 'work_page5' %}">
+                    <img src="{% static 'work/page05/image01.png' %}" />
+                    <p>野岩鉄道株式会社</p>
+                </a>
+            </div>
+            <div class="inner_box">
+                <a href="{% url 'work_page2' %}">
+                    <img src="{% static 'work/page02/image01.png' %}" />
+                    <p>ふじさき歯科医院</p>
+                </a>
+            </div>
+            <div class="inner_box">
+                <a href="{% url 'work_page6' %}">
+                    <img src="{% static 'work/page06/image01.png' %}" />
+                    <p>MENS MART</p>
+                </a>
+            </div>
+            <div class="inner_box">
+                <a href="{% url 'work_page8' %}">
+                    <img src="{% static 'work/page08/image01.png' %}" />
+                    <p>OPERA(オペラ)</p>
+                </a>
+            </div>
+            <div class="inner_box">
+            </div>
+            <div class="inner_box">
+            </div>
+        </div>
+    </section>
+    <section class="content_business" id="business">
+        <div class="out_area">
+            <h2 class="main_scroll_up">BUSINESS<span>運用業務</span></h2>
+        <div class="business_area main_scroll_up">
+            <div class="business_inner">
+                <div class="business_inner_box">
+                    <a href="{% url 'business_service' %}">
+                        <div class="image_box">
+                            <img src="{% static 'icon/icon01.png' %}" />
+                        </div>
+                        <h3>更新作業</h3>
+                        <p>東武グループのサイト更新を中心にウェブサイトの運用・更新作業をさせていただきました。</p>
+                    </a>
+                </div>
+                <div class="business_inner_box">
+                    <a href="{% url 'business_news' %}">
+                        <div class="image_box">
+                            <img src="{% static 'icon/icon02.png' %}" />
+                        </div>
+                        <h3>おすすめ記事作成</h3>
+                        <p>東武グループの魅力や情報を発信する新着ニュースの記事を作成させていただきました。</p>
+                    </a>
+                </div>
+                <div class="business_inner_box">
+                    <a href="{% url 'business_magazine' %}">
+                        <div class="image_box">
+                            <img src="{% static 'icon/icon03.png' %}" />
+                        </div>
+                        <h3>情報誌の作成</h3>
+                        <p>毎月発行となる情報誌のサイト作成、デザインを担当させていただきました。</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="content_design">
+        <h2 class="main_scroll_up">DESIGN<span>デザイン</span></h2>
+        <div class="design_area main_scroll_up">
+            <div class="design_inner">
+                <div class="design_inner_box">
+                    <a><img src="{% static 'design/image01.jpg' %}" /></a>
+                    <a><img src="{% static 'design/image02.jpg' %}" /></a>
+                    <a><img src="{% static 'design/image03.jpg' %}" /></a>
+                </div>
+                <div class="design_inner_box">
+                    <a><img src="{% static 'design/image04.jpg' %}" /></a>
+                    <a><img src="{% static 'design/image05.jpg' %}" /></a>
+                    <a><img src="{% static 'design/image06.jpg' %}" /></a>
+                </div>
+                <div class="design_inner_box">
+                    <a><img src="{% static 'design/image07.jpg' %}" /></a>
+                    <a><img src="{% static 'design/image08.jpg' %}" /></a>
+                    <a><img src="{% static 'design/image09.jpg' %}" /></a>
+                </div>
+            </div>
+            <div class="btn_inner">
+                <a href="{% url 'design' %}" class="btn">MORO</a>
+            </div>
+        </div>
+    </section>
+    <section class="content_profile" id="profile">
+        <h2 class="main_scroll_up">PROFILE<span>プロフィール</span></h2>
+        <div class="profile_area main_scroll_up">
+            <div class="profile_inner">
+                <div class="profile_box">
+                    <div class="profile_image">
+                        <img src="{% static 'common/img/profile.png' %}" />
+                    </div>
+                    <div class="profile_text">
+                        <dl>
+                            <dt>NAME</dt>
+                            <dd>
+                                坪倉修平 Tsubokura Shuhei<br>
+                                Web デザイナー<br>
+                                鳥取県生まれ、東京在住
+                            </dd>
+                            <!-- <dt>CONTACT</dt>
+                            <dd>repeat2639@gmail.com</dd> -->
+                            <dt>ADDRESS</dt>
+                            <dd>
+                                東京都東村山市<br>
+                                Tokyo Higashimurayama
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="profile_history">
+                    <p>2018年10月よりInternetAcademyスクールに通学</p>
+                    <p>2019年7月にInternetAcademyスクールを卒業</p>
+                    <p>2019年8月にNHK(日本放送協会)にてWeb制作の現場にてLINEニュースのデザイン担当を行う</p>
+                    <p>2019年11月から東武ビジネスソリューションにて東武鉄道、東武グループのWeb運用、Web制作に携わる</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock %}

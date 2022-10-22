@@ -1,0 +1,41 @@
+{% extends "base2.html" %}
+{% load static humanize %}
+
+{% block main %}
+<section class="content_business" id="business">
+    <div class="out_area">
+        <h1 class="load-fade">BUSINESS<span>運用業務</span></h1>
+    <div class="business_area load-fade">
+        <div class="business_inner">
+            <div class="business_inner_box">
+                <a href="{% url 'business_service' %}">
+                    <div class="image_box">
+                        <img src="{% static 'icon/icon01.png' %}" />
+                    </div>
+                    <h3>更新作業</h3>
+                    <p>東武グループのサイト更新を中心にウェブサイトの運用・更新作業をさせていただきました。</p>
+                </a>
+            </div>
+            <div class="business_inner_box">
+                <a href="{% url 'business_news' %}">
+                    <div class="image_box">
+                        <img src="{% static 'icon/icon02.png' %}" />
+                    </div>
+                    <h3>おすすめ記事作成</h3>
+                    <p>東武グループの魅力や情報を発信する新着ニュースの記事を作成させていただきました。</p>
+                </a>
+            </div>
+            <div class="business_inner_box">
+                <a href="{% url 'business_magazine' %}">
+                    <div class="image_box">
+                        <img src="{% static 'icon/icon03.png' %}" />
+                    </div>
+                    <h3>情報誌の作成</h3>
+                    <p>毎月発行となる情報誌のサイト作成、デザインを担当させていただきました。</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,59 @@
+
+{% load static %}
+
+<div class="navbar header">
+    <div class="nav-wrapper">
+        <!-- ②ナビゲーションメニュー -->
+        <nav class="header-nav">
+          <ul class="nav-list menu_box">
+            <li class="nav-item">
+                <a href="{% url 'index' %}">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a href="{% url 'work' %}">WORK</a>
+            </li>
+            <li class="nav-item">
+                <a href="{% url 'business' %}">BUSINESS</a>
+            </li>
+            <li class="nav-item">
+                <a href="{% url 'design' %}">DESIGN</a>
+            </li>
+            <li class="nav-item">
+                <a href="{% url 'profile' %}">PROFILE</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <button class="burger-btn">
+        <!-- ③ハンバーガーボタン -->
+        <span class="bar bar_top"></span>
+        <span class="bar bar_mid"></span>
+        <span class="bar bar_bottom"></span>
+      </button>
+      
+
+      <div class="taitle">
+          <div class="taitle_box">
+              <a href="{% url 'index' %}">
+                  <h1><img src="{% static 'logo2.svg' %}" /></h1>
+              </a>
+          </div>
+      </div>
+
+      <div class="slide-line">
+        <div class="slide_box">
+            <img class="item rotate" src="{% static 'slide2.png' %}">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 206.98" class="scroll-icon"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M141.54,129.23a8.6,8.6,0,0,1,0,12L78,204.52a8.6,8.6,0,0,1-12,0L2.46,141.28a8.6,8.6,0,0,1,0-12,8.6,8.6,0,0,1,12,0l49,49V8.49a8.49,8.49,0,1,1,17,0V178.24l49-49a8.59,8.59,0,0,1,12,0Z"></path></g></g></svg>
+        </div>
+      </div>
+      
+      
+
+      <div class="transition load-fade load-fade.is-show"></div>
+
+      
+
+</div>
+
+
+

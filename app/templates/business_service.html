@@ -1,0 +1,103 @@
+
+{% extends "base2.html" %}
+{% load static humanize %}
+
+{% block main %}
+<div id="wrapper" class="main">
+    <div class="service_page">
+        <div class="content">
+            <h1 class="load-fade">BUSINESS<span>更新作業</span></h1>
+            <div class="area_box">
+                <img src="{% static 'business/image01.jpg' %}" />
+                <div class="inner">
+                    <h2>東武鉄道</h2>
+                    <p>開発環境：HTML,CSS,JavaScript,Json,PHP,Ruby</p>
+                    <p>更新内容：鉄道に関する更新全般、IR情報の更新、採用ページの更新、新規ページの追加、バナー作成、ポスター作成、その他</p>
+                    <p class="icon">URL：<a href="https://www.tobu.co.jp/" target="_blank">https://www.tobu.co.jp/</a></p>
+                </div>
+            </div>
+            <div class="area_box">
+                <img src="{% static 'business/image02.jpg' %}" />
+                <div class="inner">
+                    <h2>エキア</h2>
+                    <p>開発環境：HTML,CSS,JavaScript</p>
+                    <p>更新内容：店舗の情報更新、バナーの作成、ホームページの情報更新</p>
+                    <p class="icon">URL：<a href="https://www.tobu-equia.com/" target="_blank">https://www.tobu-equia.com/</a></p>
+                    <p>{{info}}</p>
+                </div>
+            </div>
+            <div class="area_box">
+                <img src="{% static 'business/image03.jpg' %}" />
+                <div class="inner">
+                    <h2>ソラマチ</h2>
+                    <p>開発環境：HTML,CSS,JavaScript</p>
+                    <p>更新内容：イベント情報の追加、店舗の情報更新、バナーの作成、ホームページの情報更新</p>
+                    <p class="icon">URL：<a href="https://www.tokyo-solamachi.jp/" target="_blank">https://www.tokyo-solamachi.jp/</a></p>
+                    <p>{{info}}</p>
+                </div>
+            </div>
+            <div class="area_box">
+                <img src="{% static 'business/image04.jpg' %}" />
+                <div class="inner">
+                    <h2>茨城急行自動車</h2>
+                    <p>開発環境：Node.js,Pug,HTML,SCSS,JavaScript,</p>
+                    <p>更新内容：交通情報に関する更新（時刻表、路線図等）、採用ページの更新、バナーの作成、新規ページの追加等</p>
+                    <p class="icon">URL：<a href="https://www.ibakyu.jp/" target="_blank">https://www.ibakyu.jp/</a></p>
+                    <p>{{info}}</p>
+                </div>
+            </div>
+            <div class="area_box">
+                <img src="{% static 'business/image09.jpg' %}" />
+                <div class="inner">
+                    <h2>東武動物公園</h2>
+                    <p>開発環境：Node.js,Pug,HTML,SCSS,JavaScript,</p>
+                    <p>更新内容：園内情報の更新、お知らせ更新、バナー作成、ホームページの情報更新</p>
+                    <p class="icon">URL：<a href="https://www.tobuzoo.com/" target="_blank">https://www.tobuzoo.com/</a></p>
+                    <p>{{info}}</p>
+                </div>
+            </div>
+            <div class="area_box">
+                <img src="{% static 'business/image05.jpg' %}" />
+                <div class="inner">
+                    <h2>川越観光自動車</h2>
+                    <p>開発環境：Node.js,Pug,HTML,SCSS,JavaScript,</p>
+                    <p>更新内容：交通情報に関する更新（時刻表、路線図等）、採用ページの更新、バナーの作成、新規ページの追加等</p>
+                    <p class="icon">URL：<a href="https://www.kawagoebus.jp/" target="_blank">https://www.kawagoebus.jp/</a></p>
+                    <p>{{info}}</p>
+                </div>
+            </div>
+            <div class="area_box">
+                <img src="{% static 'business/image06.jpg' %}" />
+                <div class="inner">
+                    <h2>東武トップツアーズ</h2>
+                    <p>開発環境：HTML,CSS,JavaScript,WordPress</p>
+                    <p>更新内容：店舗の情報更新、お知らせの更新、ホームページの情報更新</p>
+                    <p class="icon">URL：<a href="https://www.tobutoptours.co.jp/" target="_blank">https://www.tobutoptours.co.jp/</a></p>
+                    <p>{{info}}</p>
+                </div>
+            </div>
+            <div class="area_box">
+                <img src="{% static 'business/image07.jpg' %}" />
+                <div class="inner">
+                    <h2>東武バス</h2>
+                    <p>開発環境：HTML,CSS,JavaScript</p>
+                    <p>更新内容：交通情報に関する更新（時刻表、路線図等）、採用ページの更新、バナーの作成、新規ページの追加等</p>
+                    <p class="icon">URL：<a href="https://www.tobu-bus.com/pc/index.html" target="_blank">https://www.tobu-bus.com/pc/index.html</a></p>
+                    <p>{{info}}</p>
+                </div>
+            </div>
+            <div class="area_box">
+                <img src="{% static 'business/image08.jpg' %}" />
+                <div class="inner">
+                    <h2>東武博物館</h2>
+                    <p>開発環境：HTML,CSS,JavaScript</p>
+                    <p>更新内容：イベント情報の追加、店舗の情報更新、ホームページの情報更新</p>
+                    <p class="icon">URL：<a href="https://www.tobu.co.jp/museum/" target="_blank">https://www.tobu.co.jp/museum/</a></p>
+                    <p>{{info}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

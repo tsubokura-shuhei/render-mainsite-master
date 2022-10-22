@@ -1,0 +1,66 @@
+{% extends "base2.html" %}
+{% load static humanize %}
+
+{% block main %}
+
+
+<div id="wrapper" class="main">
+    <div class="content_work">
+        <h1 class="load-fade">WORK<span>実績</span></h1>
+        <div class="work_inner load-fade">
+            <div class="inner_box">
+                <a href="{% url 'work_page4' %}">
+                    <img src="{% static 'work/page04/image01.png' %}" />
+                    <p>ポイント倍増キャンペーン</p>
+                </a>
+            </div>
+            <div class="inner_box">
+                <a href="{% url 'work_page7' %}">
+                    <img src="{% static 'work/page07/image01.png' %}" />
+                    <p>東武アーバンパークライン</p>
+                </a>
+            </div>
+            <div class="inner_box">
+                <a href="{% url 'work_page3' %}">
+                    <img src="{% static 'work/page03/image01.png' %}" />
+                    <p>日光・鬼怒川週末フリーデー</p>
+                </a>
+            </div>
+            <div class="inner_box">
+                <a href="{% url 'work_page1' %}">
+                    <img src="{% static 'work/page01/image01.png' %}" />
+                    <p>安芸大学</p>
+                </a>
+            </div>
+            <div class="inner_box">
+                <a href="{% url 'work_page5' %}">
+                    <img src="{% static 'work/page05/image01.png' %}" />
+                    <p>野岩鉄道株式会社</p>
+                </a>
+            </div>
+            <div class="inner_box">
+                <a href="{% url 'work_page2' %}">
+                    <img src="{% static 'work/page02/image01.png' %}" />
+                    <p>ふじさき歯科医院</p>
+                </a>
+            </div>
+            <div class="inner_box">
+                <a href="{% url 'work_page6' %}">
+                    <img src="{% static 'work/page06/image01.png' %}" />
+                    <p>MENS MART</p>
+                </a>
+            </div>
+            <div class="inner_box">
+                <a href="{% url 'work_page8' %}">
+                    <img src="{% static 'work/page08/image01.png' %}" />
+                    <p>OPERA(オペラ)</p>
+                </a>
+            </div>
+            <div class="inner_box">
+            </div>
+            <div class="inner_box">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

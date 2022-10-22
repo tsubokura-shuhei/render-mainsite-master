@@ -1,0 +1,27 @@
+
+{% extends "base2.html" %}
+{% load static humanize %}
+
+{% block main %}
+<div id="wrapper" class="main">
+    <div class="service_page">
+        <div class="content">
+            <h1 class="load-fade">BUSINESS<span>おすすめ記事作成</span></h1>
+            <div class="area_box">
+                <div class="autoplay">
+                    <img src="{% static 'business/news/image01.jpg' %}">
+                    <img src="{% static 'business/news/image02.jpg' %}">
+                </div>
+                <div class="inner">
+                    <h2>東武鉄道</h2>
+                    <p>開発環境：HTML,CSS,JavaScript,Json,PHP,Ruby</p>
+                    <p>作業内容：ページの構成、デザイン、コーディング、バナー作成</p>
+                    <p class="icon">URL：<a href="https://www.tobu.co.jp/odekake/campaign/" target="_blank">https://www.tobu.co.jp/odekake/campaign/</a></p>
+                    <p>{{info}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
